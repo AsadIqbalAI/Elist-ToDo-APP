@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="golbals.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>eList - Your ToDos manager. Fast and secure</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h2>eList | Your best ToDo manager!</h2>
+      <div class="todo-container">
+        <div class="todo-input-container">
+          <input
+            type="text"
+            id="todo-input"
+            name="todo"
+            placeholder="e.g. Redesign Amazon - Upwork Order"
+          />
+          <button id="add-todo-btn">Add</button>
+        </div>
+        <div class="todo-output-container">
+          <ul id="todo-output"></ul>
+          <div id="todos-overview">
+            <p class="todo-count">
+              <span id="total-todos">0</span> of
+              <span id="total-completed-todos">0</span> Completed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

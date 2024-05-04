@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#wrapper h2 {
+  background-color: #4c00c7;
+  background-image: linear-gradient(367deg, #4c00c7 0%, #ff0080 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.todo-container {
+  margin-top: 20px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 20px;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#todo-output {
+  padding: 5px;
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  gap: 10px;
+  width: 100%;
+}
+
+#total-todos,
+#total-completed-todos {
+  font-weight: bold;
+  font-size: 18px;
+  color: #4c00c7;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.actoins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input-container input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  padding: 0 20px;
+}
+
+.todo-input-container button {
+  width: 100px;
+  height: 40px;
+  background-color: #4c00c7;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.todo-input-container button:hover {
+  background-color: #fff;
+  color: #4c00c7;
+}
+
+.delete-icon,
+.complete-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .todo-input-container input[type="text"] {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .todo-input-container input[type="text"] {
+    max-width: 250px;
+  }
+}
